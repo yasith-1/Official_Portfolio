@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const themeToggle = document.getElementById('theme-toggle');
     const themeIcon = themeToggle.querySelector('i');
     const themeText = themeToggle.querySelector('span');
+    const color = document.getElementById("brand-color");
     let isDarkMode = false;
 
     // Check for saved theme preference
@@ -23,11 +24,16 @@ document.addEventListener('DOMContentLoaded', function () {
             themeIcon.classList.replace('fa-sun', 'fa-moon');
             themeText.textContent = 'Dark';
             localStorage.setItem('theme', 'dark');
+
+            color.classList.replace('text-primary','text-warning');
+            
         } else {
             document.body.setAttribute('data-theme', 'light');
             themeIcon.classList.replace('fa-moon', 'fa-sun');
             themeText.textContent = 'Light';
             localStorage.setItem('theme', 'light');
+
+            color.classList.replace('text-warning','text-primary');            
         }
     });
 });
