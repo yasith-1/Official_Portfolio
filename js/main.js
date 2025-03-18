@@ -5,9 +5,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const themeIcon = themeToggle.querySelector('i');
     const themeText = themeToggle.querySelector('span');
     const color = document.getElementById("brand-color");
-    const cardTitle = document.querySelectorAll(".card-title");
-    const cardText = document.querySelectorAll(".card-text");
-    const viewProjectbtn = document.querySelectorAll(".btnViewProject");
+    const cardTitle = document.getElementsByClassName("card-title");
+    const cardText = document.getElementsByClassName("card-text");
+    const viewProjectbtn = document.getElementsByClassName("btnViewProject");
     let isDarkMode = false;
 
     // Check for saved theme preference
