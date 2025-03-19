@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
 :root {
   --primary-color: #007bff;
   --secondary-color: #6c757d;
@@ -68,7 +70,15 @@ body {
 }
 
 .navbar-brand {
+  font-family: "Winky Sans", sans-serif;
+  font-size: 30px;
+  letter-spacing: 2px;
   font-weight: 700;
+}
+
+.hero-main-name{
+  font-family: "Winky Sans", sans-serif;
+  letter-spacing: 2px;
 }
 
 .header {
@@ -99,6 +109,8 @@ body {
   position: relative;
   margin-bottom: 40px;
   padding-bottom: 15px;
+  font-family: "Winky Sans", sans-serif;
+  font-weight: 500;
 }
 
 .section-title::after {
@@ -107,9 +119,20 @@ body {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 100px;
+  width: 120px;
   height: 3px;
-  background-color: var(--primary-color);
+  background-color: rgb(214, 193, 7);
+}
+
+.dark-mode .section-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 3px;
+  background-color: rgb(32, 139, 201);
 }
 
 .section {
