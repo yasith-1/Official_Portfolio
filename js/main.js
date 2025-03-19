@@ -124,6 +124,9 @@ document.addEventListener('DOMContentLoaded', function () {
         document.body.setAttribute('data-theme', 'dark');
         themeIcon.classList.replace('fa-sun', 'fa-moon');
         themeText.textContent = 'Dark';
+        localStorage.setItem('theme', 'dark');
+        document.body.classList.add("dark-mode");
+
         color.classList.replace('text-primary', 'text-warning');
         container.classList.remove('bg-body-tertiary');
 
@@ -156,6 +159,9 @@ document.addEventListener('DOMContentLoaded', function () {
         document.body.setAttribute('data-theme', 'light');
         themeIcon.classList.replace('fa-moon', 'fa-sun');
         themeText.textContent = 'Light';
+        localStorage.setItem('theme', 'light');
+        document.body.classList.remove("dark-mode");
+
         color.classList.replace('text-warning', 'text-primary');
         container.classList.add('bg-body-tertiary');
 
@@ -201,4 +207,5 @@ document.addEventListener('DOMContentLoaded', function () {
             applyLightMode();
         }
     });
+
 });
