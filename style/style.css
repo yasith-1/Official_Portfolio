@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap");
 
 :root {
   --primary-color: #007bff;
@@ -76,7 +76,7 @@ body {
   font-weight: 500;
 }
 
-.hero-main-name{
+.hero-main-name {
   font-family: "Winky Sans", sans-serif;
   letter-spacing: 2px;
 }
@@ -361,4 +361,53 @@ footer {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(25, 100, 150); /* Darker blue */
+}
+
+/* Style for the Back to Top Button ---------------------------------------------*/
+#backToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  display: none; /* Hidden by default */
+  background-color: #007bff; /* Blue color */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Back to top button hover effect */
+#backToTopBtn:hover {
+  background-color: #0056b3; /* Darker blue when hovered */
+}
+
+/* Whats app button ---------------------------------------------------------------- */
+
+.whatsapp-btn {
+  position: fixed;
+  bottom: 90px; /* Position the button above the Back to Top button */
+  right: 20px;
+  background-color: #25d366; /* WhatsApp green */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 25px;
+  /* padding: 20px; */
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
+  display: none; /* Hidden by default */
+  transition: all 0.3s ease;
+  z-index: 1001; /* Ensures it is above the Back to Top button */
+}
+
+/* Glowing Effect */
+.whatsapp-btn:hover {
+  box-shadow: 0 0 20px rgba(0, 255, 0, 1);
+  background-color: #128c7e; /* Darker green for hover */
 }
