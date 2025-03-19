@@ -82,7 +82,7 @@ body {
 }
 
 .header {
-  height: 120vh;
+  height: 100vh;
   background: url("/api/placeholder/1920/1080") center center;
   background-size: cover;
   display: flex;
@@ -339,14 +339,26 @@ footer {
   }
 }
 
-@media (min-width : 768px){
-  #main-info{
-    top: 100px;
-  }
+/* Sroll Bar customized -------------------------------------------*/
+
+/* Width and Background */
+::-webkit-scrollbar {
+  width: 8px; /* Adjust width */
 }
 
-@media (min-width : 1440px){
-  #main-info{
-    top: 350px;
-  }
+/* Track (Background of scrollbar) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Light gray */
+  /* border-radius: 10px; */
+}
+
+/* Scrollbar Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(32, 139, 201); /* Blue */
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(25, 100, 150); /* Darker blue */
 }

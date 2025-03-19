@@ -145,6 +145,11 @@ document.addEventListener('DOMContentLoaded', function () {
         offcanvasCloseBtn.classList.add("btn-close-white");
 
         document.body.classList.add("dark-mode");
+
+        // Scroll Bar
+        document.documentElement.style.setProperty('--scrollbar-thumb', 'rgba(255, 208, 0, 0.99)'); // Yellow
+        document.documentElement.style.setProperty('--scrollbar-track', '#333'); // Dark
+
     }
 
     function applyLightMode() {
@@ -172,6 +177,10 @@ document.addEventListener('DOMContentLoaded', function () {
         offcanvasCloseBtn.classList.remove("btn-close-white");
 
         document.body.classList.remove("dark-mode");
+
+        // Scroll Bar
+        document.documentElement.style.setProperty('--scrollbar-thumb', 'rgb(32, 139, 201)'); // Blue
+        document.documentElement.style.setProperty('--scrollbar-track', '#f1f1f1'); // Light gray
     }
 
     // Check and apply saved theme on page load
