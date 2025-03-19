@@ -82,7 +82,7 @@ body {
 }
 
 .header {
-  height: 110vh;
+  height: 120vh;
   background: url("/api/placeholder/1920/1080") center center;
   background-size: cover;
   display: flex;
@@ -121,7 +121,7 @@ body {
   transform: translateX(-50%);
   width: 120px;
   height: 3px;
-  background-color: rgb(214, 193, 7);
+  background-color: rgb(32, 139, 201);
 }
 
 .dark-mode .section-title::after {
@@ -132,7 +132,7 @@ body {
   transform: translateX(-50%);
   width: 120px;
   height: 3px;
-  background-color: rgb(32, 139, 201);
+  background-color: rgb(214, 193, 7);
 }
 
 .section {
